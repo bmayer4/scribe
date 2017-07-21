@@ -13,6 +13,8 @@
 		758457491F21C38100D23F62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 758457481F21C38100D23F62 /* Assets.xcassets */; };
 		7584574C1F21C38100D23F62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7584574A1F21C38100D23F62 /* LaunchScreen.storyboard */; };
 		758457571F21C38100D23F62 /* ScribeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758457561F21C38100D23F62 /* ScribeTests.swift */; };
+		758457651F2258D000D23F62 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758457641F2258D000D23F62 /* CircleButton.swift */; };
+		758457681F2261BF00D23F62 /* test.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 758457671F2261BF00D23F62 /* test.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		758457521F21C38100D23F62 /* ScribeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScribeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		758457561F21C38100D23F62 /* ScribeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScribeTests.swift; sourceTree = "<group>"; };
 		758457581F21C38100D23F62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		758457641F2258D000D23F62 /* CircleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		758457671F2261BF00D23F62 /* test.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +81,11 @@
 		758457401F21C38100D23F62 /* Scribe */ = {
 			isa = PBXGroup;
 			children = (
+				758457661F22616B00D23F62 /* Resources */,
+				758457631F22585F00D23F62 /* Controller */,
+				758457621F22585C00D23F62 /* View */,
+				758457611F22585700D23F62 /* Model */,
 				758457411F21C38100D23F62 /* AppDelegate.swift */,
-				758457431F21C38100D23F62 /* ViewController.swift */,
 				758457451F21C38100D23F62 /* Main.storyboard */,
 				758457481F21C38100D23F62 /* Assets.xcassets */,
 				7584574A1F21C38100D23F62 /* LaunchScreen.storyboard */,
@@ -94,6 +101,37 @@
 				758457581F21C38100D23F62 /* Info.plist */,
 			);
 			path = ScribeTests;
+			sourceTree = "<group>";
+		};
+		758457611F22585700D23F62 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		758457621F22585C00D23F62 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				758457641F2258D000D23F62 /* CircleButton.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		758457631F22585F00D23F62 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				758457431F21C38100D23F62 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		758457661F22616B00D23F62 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				758457671F2261BF00D23F62 /* test.m4a */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +217,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				758457681F2261BF00D23F62 /* test.m4a in Resources */,
 				7584574C1F21C38100D23F62 /* LaunchScreen.storyboard in Resources */,
 				758457491F21C38100D23F62 /* Assets.xcassets in Resources */,
 				758457471F21C38100D23F62 /* Main.storyboard in Resources */,
@@ -199,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				758457651F2258D000D23F62 /* CircleButton.swift in Sources */,
 				758457441F21C38100D23F62 /* ViewController.swift in Sources */,
 				758457421F21C38100D23F62 /* AppDelegate.swift in Sources */,
 			);
@@ -408,6 +448,7 @@
 				7584575D1F21C38100D23F62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7584575E1F21C38100D23F62 /* Build configuration list for PBXNativeTarget "ScribeTests" */ = {
 			isa = XCConfigurationList;
@@ -416,6 +457,7 @@
 				758457601F21C38100D23F62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
